@@ -1,0 +1,23 @@
+{
+  "version": "gpmr-public-v1",
+  "datasets": [
+    {"name": "winequality-red", "path": "data/winequality-red/benchmark.csv"},
+    {"name": "cleveland", "path": "data/cleveland/benchmark.csv"},
+    {"name": "thyroid", "path": "data/thyroid/benchmark.csv"},
+    {"name": "dermatology", "path": "data/dermatology/benchmark.csv"},
+    {"name": "hayes-roth", "path": "data/hayes-roth/benchmark.csv"},
+    {"name": "led7digit", "path": "data/led7digit/benchmark.csv"},
+    {"name": "flare", "path": "data/flare/benchmark.csv"},
+    {"name": "wine", "path": "data/wine/benchmark.csv"},
+    {"name": "balance", "path": "data/balance/benchmark.csv"},
+    {"name": "car", "path": "data/car/benchmark.csv"},
+    {"name": "vehicle", "path": "data/vehicle/benchmark.csv"},
+    {"name": "contraceptive", "path": "data/contraceptive/benchmark.csv"},
+    {"name": "pageblocks-full", "path": "data/pageblocks-full/benchmark.csv"},
+    {"name": "statlog-landsat", "path": "data/statlog-landsat/benchmark.csv"},
+    {"name": "dry-bean", "path": "data/dry-bean/benchmark.csv"}
+  ],
+  "classifiers": ["cart", "knn", "rf"],
+  "outer_cv": {"folds": 5, "repeats": 10, "seed": 42},
+  "gpmr": {"k": 7, "rounds": 16, "bounded_mass": true, "realization": "linear"}
+}

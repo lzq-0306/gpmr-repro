@@ -1,0 +1,17 @@
+{
+  "winequality-red": {"rows": 1599, "features": 11, "classes": 6, "sha256": "dee528bd3a54c4b3f6d8cb25ab662edafb24f8e55fc27a6fd91bbb52539adff6", "source": "MC-CCR public benchmark archive; original data: UCI Wine Quality"},
+  "cleveland": {"rows": 297, "features": 13, "classes": 5, "sha256": "cf8a766167a0d14716db6a75b714beaee7817b9e05cddc78750ea0d65a2b3468", "source": "MC-CCR public benchmark archive; original data: UCI Heart Disease"},
+  "thyroid": {"rows": 720, "features": 21, "classes": 3, "sha256": "d928417374e971c7423f4009a1302f1396cd46e1813c3f4b233e143f865c1042", "source": "MC-CCR public benchmark archive; thyroid benchmark"},
+  "dermatology": {"rows": 358, "features": 34, "classes": 6, "sha256": "d668a0c94f98473e79d6f1afe4abc5b3ef8108cc66826699dbf3b6a9f19d2baf", "source": "MC-CCR public benchmark archive; original data: UCI Dermatology"},
+  "hayes-roth": {"rows": 160, "features": 4, "classes": 3, "sha256": "2674a4da4863d8a6581258edceac2a274788701ba0759a312ea084d6585075c2", "source": "MC-CCR public benchmark archive; original data: UCI Hayes-Roth"},
+  "led7digit": {"rows": 500, "features": 7, "classes": 10, "sha256": "1d5f2123995c55f7d215c612becdf702e27681cd70ecf68b0e78a446517c7370", "source": "MC-CCR public benchmark archive; original benchmark family: KEEL LED7digit"},
+  "flare": {"rows": 1066, "features": 19, "classes": 6, "sha256": "9a40df593f8ab80a3e7af8fea6da9ff96c0045785852363596e3aa10ffc8a361", "source": "MC-CCR public benchmark archive; original data: UCI Solar Flare"},
+  "wine": {"rows": 178, "features": 13, "classes": 3, "sha256": "a1ea1f1484f248a5e9f0c4dec03b12ba81f654553246163fe72d5022a98965bb", "source": "MC-CCR public benchmark archive; original data: UCI Wine"},
+  "balance": {"rows": 625, "features": 4, "classes": 3, "sha256": "3ce5c2cded0a46a77fa53bf9c2093049e3f2c00fff0b8cbf41c1de82721654e0", "source": "MC-CCR public benchmark archive; original data: UCI Balance Scale"},
+  "car": {"rows": 1728, "features": 21, "classes": 4, "sha256": "8b70b7989b26801c372d3465f9df64a223b8f6d4c8a63faa6ed20bb432f9b5b7", "source": "MC-CCR public benchmark archive; original data: UCI Car Evaluation"},
+  "vehicle": {"rows": 846, "features": 18, "classes": 4, "sha256": "282afbea07e791417d691c6a9d1d1259e19ed67764a364a048d4f810e3c76f54", "source": "MC-CCR public benchmark archive; original data: UCI Statlog Vehicle"},
+  "contraceptive": {"rows": 1473, "features": 9, "classes": 3, "sha256": "3a71c0e7f81538af03a34f600b388ad2d6b3853446ee05118b43c7f2c668e406", "source": "MC-CCR public benchmark archive; original data: UCI Contraceptive Method Choice"},
+  "pageblocks-full": {"rows": 5473, "features": 10, "classes": 5, "sha256": "0e0e83a673291ec9f1c525cf279ce3e29e95b1ac111c2af895c438324483629d", "source": "UCI Page Blocks, DOI 10.24432/C5J590"},
+  "statlog-landsat": {"rows": 6435, "features": 36, "classes": 6, "sha256": "fd537c0e740e622a26277ba748f99448e6155c804ba9b2ce8070f270e42e394e", "source": "UCI Statlog Landsat Satellite, DOI 10.24432/C55887"},
+  "dry-bean": {"rows": 13611, "features": 16, "classes": 7, "sha256": "b7120aa6c80f0b8beefade3c91e2035120441b1aaa0533eef9ba1dc5043c4724", "source": "UCI Dry Bean, DOI 10.24432/C50S4B, CC BY 4.0"}
+}
