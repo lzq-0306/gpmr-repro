@@ -8,6 +8,8 @@ Copyright (c) 2026 Zhengqi Liu. The GPMR implementation is released under the
 MIT License; see `LICENSE`. Third-party methods and datasets retain their own
 licenses and are not redistributed where permission was not verified.
 
+Public repository: <https://github.com/lzq-0306/gpmr-repro>
+
 ## Install
 
 ```powershell

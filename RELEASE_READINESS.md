@@ -18,8 +18,11 @@ held by Zhengqi Liu. The full license text and package metadata are present.
 
 ## Remaining release actions
 
-1. Run the unit test and frozen-result verifier again.
-2. Create the public repository or archival deposit.
-3. Verify the public URL from a clean environment.
-4. Replace the manuscript's provisional data-availability wording with the
-   verified URL and rebuild the submission archive.
+The public repository was created at
+`https://github.com/lzq-0306/gpmr-repro`. The `main` branch, MIT license, and
+release commit were verified after publication. The manuscript data-availability
+statement was updated to cite the repository.
+
+An immutable Zenodo release remains optional but is recommended before final
+publication so the paper can cite a versioned DOI rather than only a mutable
+GitHub branch.
