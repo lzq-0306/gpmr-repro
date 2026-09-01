@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CLASSIFIERS = {
     "cart": lambda seed: DecisionTreeClassifier(random_state=seed),
     "knn": lambda seed: KNeighborsClassifier(n_neighbors=5),
-    "rf": lambda seed: RandomForestClassifier(n_estimators=100, random_state=seed, n_jobs=1),
+    "rf": lambda seed: RandomForestClassifier(n_estimators=200, random_state=seed, n_jobs=1),
 }
 
 

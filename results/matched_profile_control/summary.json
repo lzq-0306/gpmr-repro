@@ -1,0 +1,10 @@
+{
+  "mean_gmean_full": 0.6819693076329298,
+  "mean_gmean_permuted": 0.6624972388997195,
+  "mean_delta": 0.019472068733210206,
+  "median_delta": 0.0016186432080257385,
+  "wins": 11,
+  "ties": 0,
+  "losses": 4,
+  "wilcoxon_pvalue": 0.072998046875
+}

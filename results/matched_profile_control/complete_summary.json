@@ -1,0 +1,32 @@
+{
+  "dataset_level_gmean_primary": {
+    "full_mean": 0.6819693076329298,
+    "permuted_mean": 0.6624972388997195,
+    "mean_delta": 0.019472068733210206,
+    "median_delta": 0.0016186432080256274,
+    "wins": 11,
+    "ties": 0,
+    "losses": 4,
+    "wilcoxon_two_sided_p": 0.072998046875
+  },
+  "dataset_level_worst_recall_secondary": {
+    "full_mean": 0.549462594863473,
+    "permuted_mean": 0.535382363694381,
+    "mean_delta": 0.014080231169092015,
+    "median_delta": 0.005099567099567159,
+    "wins": 11,
+    "ties": 0,
+    "losses": 4,
+    "wilcoxon_two_sided_p": 0.1688232421875
+  },
+  "block_level_gmean_secondary": {
+    "full_mean": 0.6819693076329298,
+    "permuted_mean": 0.6624972388997196,
+    "mean_delta": 0.01947206873321023,
+    "median_delta": 0.0027613653100473368,
+    "wins": 31,
+    "ties": 0,
+    "losses": 14,
+    "wilcoxon_two_sided_p": 0.03801081844653709
+  }
+}

@@ -21,7 +21,7 @@ class GraphPosteriorMassRebalancing:
         self, *, k: int = 7, rounds: int = 16, epsilon: float = 1e-6,
         optimize_additions: bool = True, optimize_removals: bool = True,
         random_state: int = 42, bounded_mass: bool = False,
-        realization: str = "duplicate",
+        realization: str = "duplicate", permute_final_mass: bool = False,
     ):
         self.k = k
         self.rounds = rounds
@@ -30,6 +30,7 @@ class GraphPosteriorMassRebalancing:
         self.optimize_removals = optimize_removals
         self.random_state = random_state
         self.bounded_mass = bounded_mass
+        self.permute_final_mass = permute_final_mass
         if realization not in {"duplicate", "linear", "barycenter"}:
             raise ValueError(f"unknown realization: {realization}")
         self.realization = realization
@@ -127,6 +128,10 @@ class GraphPosteriorMassRebalancing:
             elif need < 0:
                 removable = candidates[mass[candidates] > 0][:(-need)]
                 mass[removable] -= 1
+        if self.permute_final_mass:
+            for class_id in range(classes):
+                class_rows = np.flatnonzero(encoded == class_id)
+                mass[class_rows] = rng.permutation(mass[class_rows])
         self.mass_ = mass.copy()
         self.target_count_ = target
         retained = np.flatnonzero(mass > 0)

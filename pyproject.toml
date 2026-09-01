@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "gpmr-repro"
-version = "1.0.0"
+version = "1.1.0"
 description = "Reproducible implementation of Graph Posterior Mass Rebalancing"
 authors = [{name = "Zhengqi Liu"}]
 license = "MIT"

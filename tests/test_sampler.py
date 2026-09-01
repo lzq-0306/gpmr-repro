@@ -15,3 +15,17 @@ def test_deterministic_and_balanced_target():
     assert np.allclose(Xa, Xb)
     counts = np.unique(ya, return_counts=True)[1]
     assert len(set(counts.tolist())) == 1
+
+
+def test_mass_permutation_preserves_each_class_profile():
+    rng = np.random.default_rng(11)
+    X = np.vstack([rng.normal(0, 1, (24, 2)), rng.normal(3, 1, (8, 2))])
+    y = np.repeat([0, 1], [24, 8])
+    settings = dict(k=3, rounds=4, bounded_mass=True, realization="linear", random_state=5)
+    full = GraphPosteriorMassRebalancing(**settings)
+    permuted = GraphPosteriorMassRebalancing(**settings, permute_final_mass=True)
+    full.fit_resample(X, y)
+    permuted.fit_resample(X, y)
+    for label in np.unique(y):
+        rows = y == label
+        assert np.array_equal(np.sort(full.mass_[rows]), np.sort(permuted.mass_[rows]))
