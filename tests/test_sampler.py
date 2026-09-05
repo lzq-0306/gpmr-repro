@@ -3,6 +3,13 @@ import numpy as np
 from gpmr import GraphPosteriorMassRebalancing
 
 
+def test_public_defaults_match_manuscript_configuration():
+    sampler = GraphPosteriorMassRebalancing()
+    assert (sampler.k, sampler.rounds) == (7, 16)
+    assert sampler.bounded_mass is True
+    assert sampler.realization == "linear"
+
+
 def test_deterministic_and_balanced_target():
     rng = np.random.default_rng(7)
     X = np.vstack([rng.normal(0, 1, (30, 3)), rng.normal(2, 1, (10, 3)), rng.normal(-2, 1, (5, 3))])

@@ -20,8 +20,8 @@ class GraphPosteriorMassRebalancing:
     def __init__(
         self, *, k: int = 7, rounds: int = 16, epsilon: float = 1e-6,
         optimize_additions: bool = True, optimize_removals: bool = True,
-        random_state: int = 42, bounded_mass: bool = False,
-        realization: str = "duplicate", permute_final_mass: bool = False,
+        random_state: int = 42, bounded_mass: bool = True,
+        realization: str = "linear", permute_final_mass: bool = False,
     ):
         self.k = k
         self.rounds = rounds
